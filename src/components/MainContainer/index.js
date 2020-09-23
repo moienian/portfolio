@@ -11,12 +11,12 @@ export default function MainContainer() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.headingContainer}>
-        <h1 className={styles.mainHeading}>{heading}</h1>
-        <p className={styles.mainQuote}>{quote}</p>
+        <h1 className={styles.mainHeading}>Heading</h1>
+        <p className={styles.mainQuote}>Quote</p>
       </div>
       <div className={styles.component}>
         {/*<About />*/}
-        <Skills />
+        {<Skills />}
       </div>
     </div>
   );
