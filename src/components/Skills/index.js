@@ -4,9 +4,9 @@ import { PortfolioContext } from "../../context";
 import SkillCard from "../SkillCard";
 
 export default function Skills() {
-  const {
-    skills: { techSkills, industryKnowledge, interpersonalSkills },
-  } = useContext(PortfolioContext);
+  const { skills } = useContext(PortfolioContext);
+  const { industryKnowledge, interpersonalSkills, techSkills } = skills;
+
   return (
     <div className={styles.container}>
       <h3>Industry Knowledge</h3>

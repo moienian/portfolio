@@ -4,51 +4,20 @@ import { skills } from "./constants/Skills";
 
 const PortfolioContext = React.createContext();
 
-const { heading: aboutHeading, quote: aboutQuote, bio } = about;
-const {
-  heading: skillsHeading,
-  quote: skillQuote,
-  techSkills,
-  industryKnowledge,
-  interpersonalSkills,
-} = skills;
-
 class PortfolioProvider extends Component {
   state = {
-    aboutMe: {
-      aboutHeading: "",
-      aboutQuote: "",
-      bio: "",
-    },
-    skills: {
-      skillsHeading: "",
-      skillQuote: "",
-      techSkills: [],
-      industryKnowledge: [],
-      interpersonalSkills: [],
-    },
+    selectedSection: "about me",
+    selectedQoute: about.quote,
+    about,
+    skills,
   };
 
-  componentDidMount() {
+  handleMenuItem = (menuItem) => {
     this.setState({
-      aboutMe: {
-        aboutHeading,
-        aboutQuote,
-        bio,
-      },
-      skills: {
-        skillsHeading,
-        skillQuote,
-        techSkills,
-        industryKnowledge,
-        interpersonalSkills,
-      },
+      selectedSection: this.state[menuItem].heading,
+      selectedQoute: this.state[menuItem].quote,
     });
-    // console.log(this.state);
-  }
-  handleMenuItem(menuItem) {
-    console.log(menuItem);
-  }
+  };
   render() {
     return (
       <PortfolioContext.Provider

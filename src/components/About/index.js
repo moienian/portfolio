@@ -4,7 +4,7 @@ import styles from "./About.module.css";
 
 export default function About() {
   const {
-    aboutMe: { bio },
+    about: { bio },
   } = useContext(PortfolioContext);
 
   return <div className={styles.container}>{bio}</div>;

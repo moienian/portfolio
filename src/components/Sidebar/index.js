@@ -16,19 +16,19 @@ export default function Sidebar() {
           className={styles.listItem}
           onClick={(e) => handleMenuItem(e.target.innerText)}
         >
-          About Me
+          about
         </p>
         <p
           className={styles.listItem}
           onClick={(e) => handleMenuItem(e.target.innerText)}
         >
-          Skills
+          skills
         </p>
         <p
           className={styles.listItem}
           onClick={(e) => handleMenuItem(e.target.innerText)}
         >
-          Projects
+          projects
         </p>
       </div>
     </div>

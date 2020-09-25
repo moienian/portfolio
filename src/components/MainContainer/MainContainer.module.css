@@ -2,7 +2,6 @@
   text-align: left;
   padding-right: 20px;
   overflow-y: auto;
-  max-height: inherit;
 }
 
 .headingContainer::after {
@@ -18,6 +17,7 @@
 .mainHeading {
   font-size: 42px;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 .mainQuote {
