@@ -6,7 +6,6 @@ import Skills from "../Skills";
 
 export default function MainContainer() {
   const { selectedSection, selectedQoute } = useContext(PortfolioContext);
-  console.log(selectedSection);
   return (
     <div className={styles.mainContainer}>
       <div className={styles.headingContainer}>

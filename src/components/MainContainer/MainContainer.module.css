@@ -1,7 +1,6 @@
 .mainContainer {
   text-align: left;
   padding-right: 20px;
-  overflow-y: auto;
 }
 
 .headingContainer::after {
@@ -27,6 +26,7 @@
   white-space: pre-wrap;
 }
 
-/* .component {
-  height: inherit;
-} */
+.component {
+  width: inherit;
+  position: absolute;
+}
