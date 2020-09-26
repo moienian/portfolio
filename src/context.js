@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { about } from "./constants/About";
 import { skills } from "./constants/Skills";
+import { projects } from "./constants/Projects";
 
 const PortfolioContext = React.createContext();
 
@@ -10,6 +11,7 @@ class PortfolioProvider extends Component {
     selectedQoute: about.quote,
     about,
     skills,
+    projects,
   };
 
   handleMenuItem = (menuItem) => {
