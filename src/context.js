@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { about } from "./constants/About";
 import { skills } from "./constants/Skills";
 import { projects } from "./constants/Projects";
+import { experiences } from "./constants/Experiences";
 
 const PortfolioContext = React.createContext();
 
@@ -12,6 +13,7 @@ class PortfolioProvider extends Component {
     about,
     skills,
     projects,
+    experiences,
   };
 
   handleMenuItem = (menuItem) => {

@@ -6,13 +6,12 @@ export default function Projects() {
   const {
     projects: { projectList },
   } = useContext(PortfolioContext);
-  console.log(projectList);
 
   return (
     <div className={styles.container}>
-      {projectList.map((project) => {
+      {projectList.map((project, i) => {
         return (
-          <div className={styles.card}>
+          <div className={styles.card} key={i}>
             <p>
               <b>Name: </b>
               {project.name}

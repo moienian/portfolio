@@ -30,6 +30,12 @@ export default function Sidebar() {
         >
           projects
         </p>
+        <p
+          className={styles.listItem}
+          onClick={(e) => handleMenuItem(e.target.innerText)}
+        >
+          experiences
+        </p>
       </div>
     </div>
   );

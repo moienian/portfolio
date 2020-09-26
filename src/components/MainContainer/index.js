@@ -4,6 +4,7 @@ import styles from "./MainContainer.module.css";
 import About from "../About";
 import Skills from "../Skills";
 import Projects from "../Projects";
+import Experiences from "../Experiences";
 
 export default function MainContainer() {
   const { selectedSection, selectedQoute } = useContext(PortfolioContext);
@@ -19,6 +20,7 @@ export default function MainContainer() {
             "about me": <About />,
             skills: <Skills />,
             projects: <Projects />,
+            experiences: <Experiences />,
           }[selectedSection]
         }
       </div>
